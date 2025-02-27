@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Combustible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 bg-ligth text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-transparent border-light shadow-lg">
+                    <div class="card-body text-center">
+                        <h2 class="mb-4">Calculadora de Combustible</h2>
+                        <form action="conversor.php" method="POST">
+                            <div class="mb-3">
+                                <label for="vehiculo" class="form-label">Seleccione el vehículo:</label>
+                                <select class="form-select" name="vehiculo" required>
+                                    <option value="camion_5">Camión 5 Toneladas</option>
+                                    <option value="camion_3">Camión 3 Toneladas</option>
+                                    <option value="pickup">Pickup</option>
+                                    <option value="panel">Panel</option>
+                                    <option value="moto">Moto</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="distancia" class="form-label">Distancia a recorrer (Km):</label>
+                                <input type="number" class="form-control" name="distancia" step="0.01" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100">Calcular Consumo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

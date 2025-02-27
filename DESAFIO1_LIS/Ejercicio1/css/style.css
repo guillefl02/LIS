@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa;
+}
+.converter-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.swap-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
